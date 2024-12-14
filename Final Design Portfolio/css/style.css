@@ -1,0 +1,87 @@
+@import url(./variable.css);
+@import url(./general.css);
+@import url(./animation.css);
+
+/*************************************************************/
+/* content container style */
+/*************************************************************/
+.content_container{
+    width: 90%;
+    max-width: 600px;
+    height: 100%;
+    max-height: 400px;
+    /* background-color: rgb(0, 0, 0); */
+    color: var(--white-color);
+    font-family: var(--main-font);
+    padding: 20px;
+}
+
+
+/*************************************************************/
+/* content text style */
+/*************************************************************/
+
+.content_container > h1:first-child{
+    font-size: 2.5rem;
+    font-weight: lighter;
+    text-shadow: var(--text-shadow);
+    letter-spacing: 2px;
+}
+
+.content_container > h1:nth-child(2){
+    font-size: 4.5rem;
+    font-weight: 300;
+    text-shadow: var(--text-shadow);
+}
+.content_container > h1:nth-child(2) > span:first-child{
+    font-size: 2.5rem; 
+    color: var(--red-color);
+    font-weight: lighter;
+    text-shadow: var(--text-shadow);
+}
+
+.content_container > h1:nth-child(2) > span:nth-child(2){
+    font-size: 5.6rem;
+    font-weight: 300;
+    text-shadow: var(--text-shadow);
+    animation: blink 1s infinite;
+}
+.content_container > p{
+    font-size: 1.5rem;
+    text-shadow: var(--text-shadow);
+    margin-block: 20px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+
+/*************************************************************/
+/* hire button style */
+/*************************************************************/
+.button_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.button_container > button{
+    font-family: var(--main-font);
+    text-shadow: var(--text-shadow);
+    padding: 5px 30px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    border: none;
+    border-radius: 2px;
+    background-color: var(--button-color);
+    box-shadow: var(--button-shadow);
+    color: var(--white-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button_container > button:hover{
+    box-shadow: none;
+    margin-top: -5px;
+    margin-left: -5px;
+}
+

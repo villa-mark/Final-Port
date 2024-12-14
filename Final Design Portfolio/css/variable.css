@@ -1,0 +1,23 @@
+@import url(../font/JosefinSlab-VariableFont_wght.ttf);
+
+@font-face {
+    font-family: josefin;
+    src: url(../font/JosefinSlab-VariableFont_wght.ttf);
+}
+
+:root {
+    --main-font: 'Josefin Slab';
+    --background-gradient: linear-gradient(135deg, #0D0D0D 10%, #3C3C3C 150%);
+    --decor-color: linear-gradient(135deg, #2f2f2f 30%, #3f3f3f 100%, #959595 170%);
+    --box-shadow: -15px -15px 30px 0 #000000ad, 
+                   -0px -0px 30px 10px #00000080;
+    --text-shadow: -5px -5px 10px #000000;
+    --button-color: #2F2F2F;
+    --button-shadow: -5px -5px 5px #000000;
+    --icon-shadow: -3px -3px 5px #000000;
+    --red-color: #ff0000;
+    --white-color: #ffffff;
+    --shadow-color: 0px 0px 20px rgba(0, 0, 0, 0.863);
+    --input-shadow: -1px -1px 5px rgba(255, 0, 0, 0.486);
+    --input-background: rgba(235, 235, 235, 0.863);
+}

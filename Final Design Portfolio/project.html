@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Anthony Villahermosa</title>
+
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="css/project.css">
+
+    <!-- Link to Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+</head>
+<body>
+   
+    <div class="main_container">
+
+        <div class="box_decor decor_1 center"><div class="center"><div class="center"></div></div></div>
+        <div class="box_decor decor_2 center"><div class="center"><div class="center"></div></div></div>
+
+        <nav class="nav_container">
+            <ul class="nav_list center_top">
+                <li class="nav_item"><a href="./index.html">Home</a></li>
+                <li class="nav_item"><a href="./about.html">About</a></li>
+                <li class="nav_item nav_active"><a href="#">Projects</a></li>
+                <li class="nav_item"><a href="./skills.html">Skills</a></li>
+                <li class="nav_item"><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main class="project_container center">
+            <h1 id="project_title">Cerpsys</h1>
+            <div class="projects">
+                <div class="project_item active">
+                    <div class="img_container" title="Cerpsys Project">
+                        <img src="./img/cerpsys.png" alt="Cerpsys System">
+                    </div>
+                    <h2>2024 - present</h2>
+                    <p>Cerpsys is a BPM Software transforms the way you run your business, turning complex processes into smooth, automated workflows with real-time insights. It’s like having a personal assistant that boosts efficiency and helps you stay ahead of the curve.</p>
+                </div>
+                <div class="project_item left">
+                    <div class="img_container" title="Project Management System">
+                        <img src="./img/offensemanagement.png" alt="Project Management System">
+                    </div>
+                    <h2>2022 - 2023</h2>
+                    <p>The Offense Management System is a standalone Java application for recording, tracking, and resolving offenses with tools for logging, penalties, and reports.</p>
+                </div>
+                <div class="project_item right">
+                    <div class="img_container">
+                        <img src="./img/guess.png" alt="Word Guess Game">
+                    </div>
+                    <h2>2022 - 2023</h2>
+                    <p>The Word Guess Game is a C++ program where players guess a hidden word by selecting letters. Players have 3 lives, losing one only if they guess a letter not in the word. The game challenges players to uncover the word before running out of lives.</p>
+                </div>
+            </div>
+            <div class="pagination_container">
+                <button class="pagination_button_prev" onclick="prevProject()"><i class="fa-solid fa-chevron-left"></i></button>
+                <p>Cerpsys</p>
+                <button class="pagination_button_next" onclick="nextProject()"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </main>
+        
+    </div>
+
+
+    <script src="./script/project.js"></script>
+    
+</body>
+</html>

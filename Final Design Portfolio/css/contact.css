@@ -1,0 +1,59 @@
+@import url(./variable.css);
+@import url(./general.css);
+@import url(./animation.css);
+
+.contact_container{
+    width: 90%;
+    max-width: 450px;
+    height: 100%;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    padding: 10px 20px;
+    background-color: rgba(29, 28, 28, 0.863);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-color);
+    border-radius: 10px;
+    color: var(--white-color);
+}
+
+.contact_container > *{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact_container > input{
+    background-color: var(--input-background);
+}
+
+.contact_container > *:focus{
+    outline: solid 1px var(--red-color);
+    box-shadow: var(--input-shadow);
+}
+
+.contact_container h1{
+    text-align: center;
+}
+
+.contact_container > textarea{
+    height: 100%;
+    max-height: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+.contact_container > button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+    margin-inline: auto;
+    margin-top: 10px;
+}
