@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Anthony Villahermosa</title>
+
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="css/about.css">
+
+    <!-- Link to Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="main_about_container">
+
+        <nav class="nav_container">
+            <ul class="nav_list center_top">
+                <li class="nav_item"><a href="./index.html">Home</a></li>
+                <li class="nav_item nav_active"><a href="#">About</a></li>
+                <li class="nav_item"><a href="./project.html">Projects</a></li>
+                <li class="nav_item"><a href="./skills.html">Skills</a></li>
+                <li class="nav_item"><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main class="about_container">
+
+            <div class="about_me_container">
+                <h1>About Me</h1>
+                <p>
+                    Hello! I'm Mark Anthony Villahemosa, a passionate web developer and tester with a
+                    solid foundation in front-end and back-end development. With a strong grasp of various 
+                    programming languages including C, C++, Java, JavaScript, SQL, PHP, Python, and experience
+                    with frameworks like Vue and jQuery, I create seamless and efficient web applications.
+                    My journey in web development started with a keen interest in crafting user-friendly and 
+                    responsive websites. Over time, I've expanded my expertise to include rigorous testing 
+                    methodologies, ensuring the quality and performance of web solutions. Whether it's designing 
+                    intuitive interfaces or optimizing backend functionality, I strive to deliver innovative and 
+                    reliable solutions to clients and teams.
+                    I am committed to continuous learning and staying updated with the latest industry trends to 
+                    provide the best possible outcomes in every project I undertake.
+                </p>
+            </div>
+
+            <!-- DTR Section -->
+            <div class="DTR_content_container">
+                <h1>Daily Time Record (DTR)</h1>
+
+                <div class="iframe-container">
+                    <div class="loader" id="loader1"></div>
+                    <iframe 
+                        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSma4KzX4vFDQ75Twm5-OteilHHDBGtIgAqk1P3aDUSW1nj_xVKk33rzRtp5O_Zf9zp2jteUajjjDGt/pubhtml?gid=1648456433&amp;single=true&amp;widget=true&amp;headers=false" 
+                        id="dtrIframe" 
+                        onload="adjustIframe('loader1', 'dtrIframe')">
+                    </iframe>
+                </div>
+
+                <button class="slide_button" style="display: none;" onclick="expandDTR()">Expand</button>
+            </div>
+
+            <!-- Resume Section -->
+            <div class="resume_content_container">
+                <h1>Resume</h1>
+                <div class="iframe-container">
+                    <div class="loader" id="loader2"></div>
+                    <iframe 
+                        src="https://www.canva.com/design/DAF_ACkS7Yw/n0NVS2yvV-ggrBtJGpjUQw/view?embed" 
+                        id="resumeIframe" 
+                        onload="adjustIframe('loader2', 'resumeIframe')"
+                        allowfullscreen="allowfullscreen" allow="fullscreen">
+                    </iframe>
+                </div>
+                <button class="slide_button" style="display: none;" onclick="setDownloadHref()">Download Resume</button>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="./script/about.js"></script>
+</body>
+</html>
